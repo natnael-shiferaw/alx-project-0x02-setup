@@ -1,7 +1,11 @@
+import Header from '@/components/layout/Header'
 import React from 'react'
 
 export default function Home() {
   return (
-    <div>Welcome to Alx</div>
+    <>
+      <Header />
+      <div>Welcome to Alx</div>
+    </>
   )
 }
