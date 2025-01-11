@@ -18,3 +18,18 @@ export interface ButtonProps {
     onClick?: () => void;
     children: React.ReactNode // Button Text
 }
+
+// interface for a PostProps for a PostCard component
+export interface PostProps {
+    title: string,
+    content: string,
+    userId: string,
+}
+
+// interface for a Post from an api
+export interface Post {
+    title: string,
+    body: string,
+    userId: number,
+    id: number,
+}
