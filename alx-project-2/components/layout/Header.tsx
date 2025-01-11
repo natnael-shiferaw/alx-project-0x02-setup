@@ -5,9 +5,16 @@ import React from 'react'
 function Header() {
   return (
     <>
-        <div>Header</div>
-        <Link href='/about'>About</Link>
-        <Link href='/home'>Home</Link>
+          <nav>
+              <ul>
+                  <li>
+                      <Link href='/home'>Home</Link>
+                  </li>
+                  <li>
+                      <Link href='/about'>About</Link>
+                  </li>
+              </ul>
+          </nav>
     </>
   )
 }
