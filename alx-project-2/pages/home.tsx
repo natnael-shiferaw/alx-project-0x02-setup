@@ -1,5 +1,6 @@
 import Card from '@/components/common/Card'
 import PostModal from '@/components/common/PostModal'
+import Header from '@/components/layout/Header'
 import React, { useState } from 'react'
 
 function Home() {
@@ -12,6 +13,7 @@ function Home() {
 
   return (
       <>
+        <Header />
           <h1 className='text-2xl font-semibold m-6'>Home page</h1>
           <button
               onClick={() => setIsModalOpen(true)}

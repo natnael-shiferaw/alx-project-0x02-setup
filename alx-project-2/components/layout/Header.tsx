@@ -5,13 +5,16 @@ import React from 'react'
 function Header() {
   return (
     <>
-          <nav>
-              <ul>
+          <nav className=' shadow-md'>
+              <ul className='flex gap-4 justify-end m-6'>
                   <li>
                       <Link href='/home'>Home</Link>
                   </li>
                   <li>
                       <Link href='/about'>About</Link>
+                  </li>
+                  <li>
+                      <Link href='/pages'>Pages</Link>
                   </li>
               </ul>
           </nav>
