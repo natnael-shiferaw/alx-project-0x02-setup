@@ -15,6 +15,9 @@ function Header() {
           <li>
             <Link href='/pages'>Pages</Link>
           </li>
+          <li>
+            <Link href='/users'>Users</Link>
+          </li>
         </ul>
       </nav>
     </>

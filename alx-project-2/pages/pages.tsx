@@ -3,7 +3,7 @@ import Header from '@/components/layout/Header'
 import { Post } from '@/interfaces'
 import React, { useEffect, useState } from 'react'
 
-function pages() {
+function Pages() {
     const [posts, setPosts] = useState<Post[]>([])
 
     useEffect(() => {
@@ -25,8 +25,8 @@ function pages() {
             <h1 className='text-3xl font-bold'>A page for Posts</h1>
 
             <div className='grid grid-cols-1 md:grid-cols-3 gap-4'>
-                {posts.map((post, index) => (
-                    <PostCard key={index} 
+                {posts.map((post) => (
+                    <PostCard key={post.id} 
                               title={post.title}
                               content={post.body}
                               userId={post.userId.toString()}
@@ -38,4 +38,4 @@ function pages() {
   )
 }
 
-export default pages
+export default Pages

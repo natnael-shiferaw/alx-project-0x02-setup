@@ -33,3 +33,27 @@ export interface Post {
     userId: number,
     id: number,
 }
+
+//interface for a User from an api
+export interface User {
+// Suggested code may be subject to a license. Learn more: ~LicenseLog:4157557145.
+    id: number,
+    name: string,
+    email: string,
+}
+
+// interface for a UserProps
+export interface UserProps {
+    name: string,
+    email: string,
+    address: {
+        street: string,
+        suite: string,
+        city: string,
+        zipcode: string,
+        geo: {
+            lat: string,
+            lng: string,
+        }
+    }
+}
